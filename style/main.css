@@ -1,3 +1,42 @@
+:root{/* Raiz do documento */
+    --vermelho:#E50914; /* Declarando variavel */
+    --preta:#141414;
+}
+
+*{/* Reset CSS */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;/* Limita saida da caixa, não permite que elementos saim dela*/
+}
+
 body{
-    background-color: aquamarine;
+    background: var(--preta);/* chamando variavel definida */
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+header .conteiner{/* caixa */
+    display: flex; /* Alinha elementos na tela em Linha padrão*/
+    flex-direction: row;/* Igual ao padrão */
+    align-items: center;
+    justify-content: space-between; /* Alinha na Horizontal, espaço entre elemento */
+
+}
+
+header .logo{
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+}
+
+/* MENU */
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px; /* espaço referente ao elemento a direita */
+}
+
+header nav a:hover{
+    color: #fff;
 }
