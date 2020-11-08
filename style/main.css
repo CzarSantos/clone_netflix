@@ -8,10 +8,11 @@
     padding: 0;
     box-sizing: border-box;/* Limita saida da caixa, não permite que elementos saim dela*/
 }
-
+/* Elementos base */
 body{
     background: var(--preta);/* chamando variavel definida */
     font-family: 'Times New Roman', Times, serif;
+    color: white;
     
 }
 
@@ -39,4 +40,25 @@ header nav a{
 
 header nav a:hover{
     color: #fff;
+}
+
+/* Filme pricipal */
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%),url('../img/bates.jpg');
+    height: 400px;
+    background-size: cover;/* Ajusta a imagem dentro da caixa, area de cobertura */
+
+    display: flex;/* joga elementos em linha */
+    flex-direction: column;/* Colocando flex como colunas */
+    justify-content: center;
+    align-items: flex-start;/* Começa da esquerda */
+
+}
+.filme-principal .descricao{
+    margin-bottom: 40px;/* espaço sobre o elemento de baixo */
+}
+
+.titulo{
+    font-size: 40px;
 }
